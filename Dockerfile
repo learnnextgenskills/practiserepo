@@ -10,7 +10,8 @@ unzip \
 git \
  maven \
 vim \
-curl
+curl \
+default-jdk
 
 RUN wget -q https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.0.3.778-linux.zip \
  && unzip -q sonar-scanner-cli-3.0.3.778-linux.zip -d / \
