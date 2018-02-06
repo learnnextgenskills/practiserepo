@@ -16,6 +16,10 @@ pipeline {
                  }
            steps {
                    echo"Am inside of Docker" 
+                   sh """#!/bin/bash -e
+                         cd /sonar-scanner-3.0.3.778-linux/bin
+                         ./sonar-scanner
+                      """
                  }
           }
           }
