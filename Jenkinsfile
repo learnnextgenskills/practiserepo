@@ -6,6 +6,8 @@ pipeline {
         timestamps()
     }
     stages{
+         stage('Sonar')
+          {
            agent {
                         dockerfile {
                             dir 'docker'
@@ -16,5 +18,6 @@ pipeline {
            steps {
                  /sonar-scanner-3.0.3.778-linux/bin/sonar-scanner
                  }
+          }
           }
          }
