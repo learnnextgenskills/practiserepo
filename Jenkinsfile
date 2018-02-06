@@ -11,7 +11,7 @@ pipeline {
            agent {
                         dockerfile {
                             dir '.'
-                            args '-u root'
+                            args '-u root -v sonar:/root/.sonar/'
                                    }
                  }
            steps {
