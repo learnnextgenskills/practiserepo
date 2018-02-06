@@ -11,6 +11,13 @@ pipeline {
         timestamps()
     }
     stages{
+         stage('Build')
+          {
+           steps {
+                   sh """cd src"""
+                 }
+          }
+
          stage('Sonar')
           {
            steps {
