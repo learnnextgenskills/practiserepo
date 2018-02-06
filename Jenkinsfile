@@ -14,7 +14,7 @@ pipeline {
          stage('Build')
           {
            steps {
-                   mvn clean test package
+                  sh ' mvn clean test package'
                  }
 
           }
