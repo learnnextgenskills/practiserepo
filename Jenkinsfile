@@ -15,7 +15,7 @@ pipeline {
                                    }
                  }
            steps {
-                 /sonar-scanner-3.0.3.778-linux/bin/sonar-scanner
+                   echo"Am inside of Docker" 
                  }
           }
           }
