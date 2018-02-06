@@ -14,7 +14,9 @@ pipeline {
          stage('Build')
           {
            steps {
-                   sh """cd src"""
+                   sh """cd src
+                         ls
+                      """
                  }
           }
 
