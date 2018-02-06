@@ -10,7 +10,7 @@ pipeline {
           {
            agent {
                         dockerfile {
-                            dir 'docker'
+                            dir '.'
                             args '-u root'
                                    }
                  }
