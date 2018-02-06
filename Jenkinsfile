@@ -14,13 +14,12 @@ pipeline {
          stage('Build')
           {
            steps {
-                   sh """cd src
-                         ls
-                      """
+                   mvn clean test package
                  }
+
           }
 
-         stage('Sonar')
+/*          stage('Sonar')
           {
            steps {
                    echo"Am inside of Docker" 
@@ -31,4 +30,4 @@ pipeline {
                  }
           }
           }
-         }
+         } */
