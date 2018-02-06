@@ -11,6 +11,7 @@ pipeline {
         timestamps()
     }
     stages{
+         stage('Build')
          stage('Sonar')
           {
            steps {
