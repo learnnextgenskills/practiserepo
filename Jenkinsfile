@@ -13,7 +13,6 @@ pipeline {
     stages{
          stage('Sonar')
           {
-                                   }
            steps {
                    echo"Am inside of Docker" 
                    sh """#!/bin/bash -e
