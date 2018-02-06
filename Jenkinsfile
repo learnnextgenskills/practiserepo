@@ -11,6 +11,7 @@ pipeline {
                             dir 'docker'
                             label 'docker'
                             args '-u root'
+                                   }
                  }
            steps {
                  /sonar-scanner-3.0.3.778-linux/bin/sonar-scanner
