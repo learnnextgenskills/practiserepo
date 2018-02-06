@@ -1,5 +1,10 @@
 pipeline {
-    agent none
+          agent {
+                        dockerfile {
+                            dir '.'
+                            args '-u root -v sonar:/root/.sonar/'
+                                   }
+                 }
 
     options {
         timeout(time: 4, unit: 'HOURS')
@@ -8,12 +13,7 @@ pipeline {
     stages{
          stage('Sonar')
           {
-           agent {
-                        dockerfile {
-                            dir '.'
-                            args '-u root -v sonar:/root/.sonar/'
                                    }
-                 }
            steps {
                    echo"Am inside of Docker" 
                    sh """#!/bin/bash -e
